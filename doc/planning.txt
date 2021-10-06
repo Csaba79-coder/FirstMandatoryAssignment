@@ -1,0 +1,17 @@
+Do not forget that DB connection used only once!!! and need for the whole project - Singleton!
+
+Do not forget - column and row are enums of DB
+
+Do not forget to use lombok not to write getter and setter (reason: our teacher loves it, and he got the info from one of our classmate ... to be nerd/geek!!!)
+
+Do not forget to make diagrams!
+
+These are the basics!!! :) Write a copyright :) do not forget to inform them about not contribute / agree to publish ny project anywhere + ADD LICENCE as usually!!!
+
+DO NOT forget dependencies!
+
+Follow your logic!!! Do not forget ... we are all different, so someone can use other structure, but be clear!!!
+
+NAME of project Welcome to blogDatabase!!! - this is the name of project on MySQL server
+
+name of database: blogDatabase

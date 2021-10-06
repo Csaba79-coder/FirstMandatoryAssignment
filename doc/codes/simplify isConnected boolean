@@ -1,0 +1,15 @@
+public boolean isConnected() {
+        if (CONNECTION != null) {
+            return true;
+        }
+        return false;
+    }
+
+simplify: (=clean code!)
+
+public boolean isConnected() {
+        return CONNECTION != null;
+    }
+
+
+

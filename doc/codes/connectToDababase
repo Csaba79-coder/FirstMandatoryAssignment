@@ -1,0 +1,35 @@
+// connection not only one project
+
+ private DatabaseConnection() throws SQLException {
+        try {
+            Class.forName("org.postgresql.Driver");
+            this.connection = DriverManager.getConnection(getURL(), getUSERNAME(), getPASSWORD());
+        } catch (ClassNotFoundException ex) {
+            System.out.println("Database Connection Creation Failed : " + ex.getMessage());
+        }
+    }
+
+ another connection I really like:
+
+ private static Connection connection;
+
+     static {
+         String url = "jdbc:mysql://localhost:3306/" + System.getenv("PROJECT_NAME") +
+                 "?" +
+                 "useUniCode=yes" +
+                 "&" +
+                 "characterEncoding=UTF-8";
+         try {
+             //  Class.forName("com.mysql.jdbc.Driver"); // not deprecated!!!!
+             Class.forName("com.mysql.cj.jdbc.Driver");
+             connection = DriverManager.getConnection(url,System.getenv("USERNAME"), System.getenv("PASSWORD"));
+             System.out.println("connected with Singleton!");
+         } catch (ClassNotFoundException | SQLException exception) {
+             exception.printStackTrace();
+             System.out.println(exception.getMessage());
+         }
+     }
+
+     public static Connection getConnection() {
+         return connection;
+     }
