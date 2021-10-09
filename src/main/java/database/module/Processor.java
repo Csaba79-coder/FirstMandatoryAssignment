@@ -2,12 +2,14 @@ package database.module;
 
 import database.controller.CheckingMethod;
 import database.controller.DatabaseController;
-import database.controller.PreparedStatement;
 import database.util.Print;
+import database.util.TxtReader;
 
 public class Processor {
 
     public void run() {
+
+        new TxtReader().readTxt();
 
         Print print = new Print();
 

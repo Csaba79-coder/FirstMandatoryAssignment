@@ -1,8 +1,5 @@
 package database.connection;
 
-import database.model.DatabaseVariable;
-import org.w3c.dom.ls.LSOutput;
-
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;

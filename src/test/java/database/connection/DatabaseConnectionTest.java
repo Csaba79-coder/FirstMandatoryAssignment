@@ -3,8 +3,6 @@ package database.connection;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.sql.Connection;
-
 import static org.junit.Assert.*;
 
 public class DatabaseConnectionTest {
